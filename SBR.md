@@ -2078,6 +2078,10 @@ If present, the Mailbox Address SHALL contain a `rfc822Name` or `otherName` valu
 
 If present, the Pseudonym SHALL contain the `subject:pseudonym` if that Subject attribute is also present.
 
+If the subject:commonName contains a Pseudonym, then the subject:givenName and/or subject:surname attributes SHALL NOT be present.
+
+If the subject:commonName contains a Personal Name, then the subject:pseudonym attribute SHALL NOT be present.
+
 **Note**: Like all other Certificate attributes, `subject:commonName` and `subject:emailAddress` SHALL comply with the attribute upper bounds defined in [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).
 
 Additional specifications for naming are provided in [Section 3.1](#31-naming).
